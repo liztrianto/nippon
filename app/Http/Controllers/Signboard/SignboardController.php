@@ -50,7 +50,7 @@ class SignboardController extends Controller
             ->leftJoin('signboards', 'detail_signboard.signboard_id', '=', 'signboards.id')
             ->select([
                 'detail_signboard.*'               
-                    ])->where('signboards.created_by','=',$login->id)->get();
+                    ])->where('signboards.created_by','=',$login->id);
 
           
         

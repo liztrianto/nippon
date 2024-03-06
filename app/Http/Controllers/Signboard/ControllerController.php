@@ -82,7 +82,7 @@ class ControllerController extends Controller
             'toko.kode_sap as kode_sap','toko.nama_toko as nama_toko','toko.alamat as alamat',
             'toko.kota as kota','toko.nama_pemilik','toko.no_telp',
              'dept.nama_departemen as dept', 'depo.nama_depo', 'depo.id as depo_id', 'depo.manager_id'           
-        ])->get();              
+        ]);             
         
         return DataTables::of($signboard)
         ->addIndexColumn()
